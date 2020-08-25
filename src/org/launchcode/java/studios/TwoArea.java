@@ -1,8 +1,8 @@
-package org.launchcode.java.studios.areaofacircle;
+package org.launchcode.java.studios;
 
 import java.util.Scanner;
 
-public class Area {
+public class TwoArea {
     public static void main(String[] args) {
         double pi;
         double radius;
@@ -12,7 +12,7 @@ public class Area {
         System.out.println("Enter a radius: ");
         radius = input.nextDouble();
         pi = 3.14;
-        area = Circle.getArea(radius); //pi * radius * radius;
+        area = TwoCircle.getArea(radius); //pi * radius * radius;
         System.out.println("The area of a circle of radius " + radius + " is: " + area);
     }
 }

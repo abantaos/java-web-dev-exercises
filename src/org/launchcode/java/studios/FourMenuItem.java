@@ -6,43 +6,64 @@ public class FourMenuItem {
     private double itemPrice;
     private String itemDescription;
     private String itemCategory;
-    private String itemNew;
+    private Boolean itemNew;
 
-    public void setItemName(String newItemName) { itemName = newItemName; }
-    public String getItemName() { return itemName; }
-
-    public void setItemPrice(double newItemPrice) {
-        itemPrice = newItemPrice;
-    }
-    public double getItemPrice() {
-        return itemPrice;
+    public FourMenuItem(String itemName, double itemPrice, String itemDescription, String itemCategory , Boolean itemNew) {
+        this.itemName = itemName;
+        this.itemPrice = itemPrice;
+        this.itemDescription = itemDescription;
+        this.itemCategory = itemCategory;
+        this.itemNew = true;
     }
 
-    public void setItemDescription(String newItemDescription) { itemDescription = newItemDescription; }
-    public String getItemDescription() { return itemDescription; }
-
-    public void setItemCategory(String newItemCategory) {
-
-//        itemCategory = newItemCategory;
-    }
-    public String getItemCategory() {
-        return itemCategory;
+    public FourMenuItem(String itemName, double itemPrice, String itemDescription, String itemCategory) {
+        this.itemName = itemName;
+        this.itemPrice = itemPrice;
+        this.itemDescription = itemDescription;
+        this.itemCategory = itemCategory;
+        this.itemNew = true;
     }
 
-    public void setItemNew(String newSetItemNew) {
-        //
-    }
-    public String getItemNew() {
-        return itemNew;
-    }
+        public String getItemName() {
+            return this.itemName;
+        }
+        public void setItemName(String newItemName) {
+            this.itemName = newItemName;
+        }
+
+        public double getItemPrice() {
+            return this.itemPrice;
+        }
+        public void setItemPrice(double newItemPrice) {
+            this.itemPrice = newItemPrice;
+        }
+
+
+
+
 
 }
 
 /*
+
+public constructor(a, b, c,) {
+    this.a = a;
+    this.b = b;
+    this.c = c;
+ }
+
+
+
 Item Name
+    setter & getter
 Price
+    setter & getter
 Description
+    setter & getter
 Category: Appetizer, Main Course, Dessert
+    getter
 New or Not new
+    setter & getter
 Menu last updated
+    getter
  */

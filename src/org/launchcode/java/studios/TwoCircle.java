@@ -1,8 +1,8 @@
-package org.launchcode.java.studios.areaofacircle;
+package org.launchcode.java.studios;
 
 import java.util.Scanner;
 
-public class Circle {
+public class TwoCircle {
     public static double getArea(Double radius) {
         return 3.14 * radius * radius;
     }

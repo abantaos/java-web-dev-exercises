@@ -2,7 +2,7 @@ package org.launchcode.java.exercises;
 
 import java.util.Scanner;
 
-public class Rectangle {
+public class TwoRectangle {
     public static void main(String[] args) {
         double length;
         double width;
