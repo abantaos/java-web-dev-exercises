@@ -3,7 +3,7 @@ package org.launchcode.java.exercises;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ThreeArrListPra {
+public class ThreeArrListPrac {
 
     public static void main(String[] args) {
 
