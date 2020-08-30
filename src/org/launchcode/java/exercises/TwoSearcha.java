@@ -2,7 +2,7 @@ package org.launchcode.java.exercises;
 
 import java.util.Scanner;
 
-public class TwoSearch {
+public class TwoSearcha {
     public static void main(String[] args) {
         String sentence;
         String term;

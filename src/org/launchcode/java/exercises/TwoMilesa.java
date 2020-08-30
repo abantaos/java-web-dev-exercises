@@ -2,7 +2,7 @@ package org.launchcode.java.exercises;
 
 import java.util.Scanner;
 
-public class TwoMiles {
+public class TwoMilesa {
     public static void main(String[] args) {
         double miles;
         double gas;

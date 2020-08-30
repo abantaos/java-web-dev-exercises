@@ -2,7 +2,7 @@ package org.launchcode.java.exercises;
 
 import java.util.Arrays;
 
-public class ThreeArrPrac {
+public class ThreeArrPra {
     public static void main(String[] args) {
         int nums[] = {1, 1, 2, 3, 5, 8};
 

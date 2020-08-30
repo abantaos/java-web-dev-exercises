@@ -2,7 +2,7 @@ package org.launchcode.java.exercises;
 
 import java.util.Scanner;
 
-public class TwoHelloWorld {
+public class TwoHelloWorlda {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         System.out.println("Hello, what is your name:");

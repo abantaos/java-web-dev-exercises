@@ -1,17 +1,15 @@
 package org.launchcode.java.studios;
 
-import org.launchcode.java.demos.lsn3classes1.Student;
-
-import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class FourMenu {
-    public static void main(String[] args) {
-//         Instance of MenuItem class
-        FourMenuItem pasta = new FourMenuItem("pasta", 24.99, "good", "Main Course", true);
-        System.out.println("Item Name: " + pasta.getItemName() + "\nItem Price: " + pasta.getItemPrice());
+    private ArrayList<FourMenuItem> listOfDishes;
+    private Date lastUpdated;
 
-//        LocalDate dateUpdated = LocalDate.now();
-//        System.out.println("Date Updated: " + dateUpdated);
-
+    public FourMenu() {
+        this.listOfDishes = new ArrayList<>();
+        this.lastUpdated = new Date(); // right now
     }
 }
+
