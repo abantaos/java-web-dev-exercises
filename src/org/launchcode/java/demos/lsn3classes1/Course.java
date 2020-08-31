@@ -10,7 +10,7 @@ public class Course {
     private ArrayList<Student> roster = new ArrayList<>(); //this is an object type
 
     //this is the constructor
-    //does ever course have same name? if not, need parameter
+    //does every course have same name? if not, need parameter
     public Course(String name, int credits) {
         this.name = name;
         this.credits = credits;
