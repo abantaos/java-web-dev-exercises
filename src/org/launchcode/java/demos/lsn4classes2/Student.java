@@ -30,17 +30,35 @@ public class Student {
 
 
      //TODO: Uncomment and complete the getGradeLevel method here:
-//    public String getGradeLevel() {
-//        // Determine the grade level of the student based on numberOfCredits
-//    }
+    public String getGradeLevel() {
+        // Determine the grade level of the student based on numberOfCredits
+        if(numberOfCredits<30) {
+            return "Freshman";
+        } else if(numberOfCredits<60) {
+            return "Sophomore";
+        } else if (numberOfCredits<90) {
+            return "Junior";
+        } else {
+            return "Senior";
+        }
+    }
 
     // TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
         // Update the appropriate fields: numberOfCredits, gpa
+        double currentQualityScore = this.numberOfCredits * this.gpa;
+        double courseQualityScore = courseCredits * grade;
+        double totalQualityScore = currentQualityScore + courseQualityScore;
+        this.numberOfCredits += courseCredits;
+        this.gpa = totalQualityScore / (this.numberOfCredits);
     }
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
+
+    public String toString() {
+        return "Name: " + this.name + " ID: " + this.studentId + " Credits : " + this.numberOfCredits + " GPA: " + this.gpa + " nextStudentId: " + this.nextStudentId;
+    }
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
@@ -82,8 +100,17 @@ public class Student {
         System.out.println("The Student class works! " + sally.getName() + " is a student!");
         System.out.println(sally);
         sally.addGrade(12, 3.5);
-        System.out.println(sally);
+        System.out.println(sally.toString());//this is the same thing as above
         sally.addGrade(25, 3.8);
         System.out.println(sally);
+
+        Student doug = new Student("Doug");
+        doug.getGpa();
+        boolean same = doug == sally;
+        doug.equals(sally);
+
+
+        System.out.println(sally);
+
     }
 }

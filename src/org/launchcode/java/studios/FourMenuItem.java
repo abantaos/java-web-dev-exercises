@@ -7,13 +7,17 @@ public class FourMenuItem {
     private String itemCategory;
     private boolean itemNew;
 
-    public FourMenuItem(String itemName, double itemPrice, String itemDescription, String itemCategory, boolean itemVegan) {
+    public FourMenuItem(String itemName, double itemPrice, String itemDescription, String itemCategory) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemDescription = itemDescription;
         this.itemCategory = itemCategory;
         this.itemNew = true; //skipped parameter because all menu items are new
     }
+
+
+
+
 
     public String getItemName() {
         return itemName;
