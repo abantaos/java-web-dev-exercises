@@ -1,46 +1,59 @@
-//package org.launchcode.java.exercises.bankstuff.tests;
-//
-//import org.junit.Before;
-//import org.junit.Test;
-//
-//import static org.junit.Assert.assertEquals;
-//import static org.junit.Assert.fail;
-//
-//public class BankAccountTests {
-//    //what does bank account have
-//    //accountNumber
-//    //balance
-//    //owner(s) - Joint?
-//
-//    //type - checking, savings, etc.
-//
-//    //what can you do with a bank account
-//    //deposit
-//    //withdraw
-//    //transfer
-//    //accrueInterest
-//
-//    private BankAccount ba;
-//
-//    @Before
-//    public void makeBankAccount() {
-//        BankAccount ba = new BankAccount(accountNo);
-//    }
-//
-//    @Test
-//    public void testSimpleDeposit() {
-//        ba.deposit(1);
-//        assertEquals(1, ba.getBalace());
-//    }
-//
-//    @Test(expected = IllegalArgumentException.class)
-//    public void testDepositNegativeValue() {
-//        ba.deposit(-2);
-//        fail("no");
-//    }
-//
-//
-//
-//
-//
-//}
+package org.launchcode.java.exercises.bankstuff.tests;
+
+import org.launchcode.java.exercises.bankstuff.accounts.BankAccount;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
+public class BankAccountTests {
+    //what does bank account have
+    //accountNumber
+    //balance
+    //owner(s) - Joint?
+
+    //type - checking, savings, etc.
+
+    //what can you do with a bank account
+    //deposit
+    //withdraw
+    //transfer
+    //accrueInterest
+
+    private BankAccount ba;
+
+    @Before
+    public void makeBankAccount() {
+        ba = new BankAccount(10);
+        ba.deposit(10);
+    }
+
+    @Test
+    public void testSimpleDeposit() {
+        ba.deposit(1);
+        assertEquals(11, ba.getBalance(), 0.001);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testDepositNegativeValue() {
+        ba.deposit(-2);
+        fail("Should not be able to deposit a negative amount");
+    }
+
+    @Test
+    public void testSimpleWithdrawal() {
+        //do we allow balance to go negative?
+        ba.withdraw(5);
+        assertEquals(5, ba.getBalance(), 0.001);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testWithdrawNegativeValue() {
+        ba.withdraw(-2);
+        fail("Should not be able to withdraw a negative amount");
+    }
+
+
+
+}
