@@ -1,8 +1,8 @@
-package org.launchcode.java.exercises;
+package org.launchcode.java.exercises.chtwo;
 
 import java.util.Scanner;
 
-public class TwoSearch {
+public class Search {
     public static void main(String[] args) {
         String sentence;
         String term;

@@ -1,4 +1,4 @@
-package org.launchcode.java.studios;
+package org.launchcode.java.studios.chthree;
 
 import java.io.*;
 import java.util.HashMap;

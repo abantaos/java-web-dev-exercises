@@ -1,13 +1,13 @@
-package org.launchcode.java.studios;
+package org.launchcode.java.studios.chfour;
 
-public class FourMenuItem {
+public class MenuItem {
     private String itemName;
     private double itemPrice;
     private String itemDescription;
     private String itemCategory;
     private boolean itemNew;
 
-    public FourMenuItem(String itemName, double itemPrice, String itemDescription, String itemCategory) {
+    public MenuItem(String itemName, double itemPrice, String itemDescription, String itemCategory) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemDescription = itemDescription;

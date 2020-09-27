@@ -1,8 +1,8 @@
-package org.launchcode.java.exercises;
+package org.launchcode.java.exercises.chtwo;
 
 import java.util.Scanner;
 
-public class TwoHelloWorld {
+public class HelloWorld {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         System.out.println("Hello, what is your name:");

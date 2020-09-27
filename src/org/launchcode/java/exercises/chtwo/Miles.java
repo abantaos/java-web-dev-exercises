@@ -1,8 +1,8 @@
-package org.launchcode.java.exercises;
+package org.launchcode.java.exercises.chtwo;
 
 import java.util.Scanner;
 
-public class TwoMiles {
+public class Miles {
     public static void main(String[] args) {
         double miles;
         double gas;

@@ -1,8 +1,8 @@
-package org.launchcode.java.exercises;
+package org.launchcode.java.exercises.chthree;
 
 import java.util.Arrays;
 
-public class ThreeArrPrac {
+public class ArrPrac {
     public static void main(String[] args) {
         int nums[] = {1, 1, 2, 3, 5, 8};
 

@@ -1,8 +1,8 @@
-package org.launchcode.java.exercises;
+package org.launchcode.java.exercises.chtwo;
 
 import java.util.Scanner;
 
-public class TwoRectangle {
+public class Rectangle {
     public static void main(String[] args) {
         double length;
         double width;
